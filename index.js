@@ -102,7 +102,7 @@ function angkaPrima (num) {
 function angkaLife(snake){
     if(snake.score %5 == 0 ){
         snake.level += 1;
-        MOVE_INTERVAL /= 1.2;
+        MOVE_INTERVAL /= 1.5;
         var audio = new Audio('./assets/sound.mp3');
         audio.play();
         if(snake.level <5){
@@ -448,7 +448,7 @@ function move(snake) {
         }, MOVE_INTERVAL);
     } else {
         initGame();
-        MOVE_INTERVAL = 100;
+        MOVE_INTERVAL = 160;
     }
 }
 
